@@ -1,2 +1,2 @@
-# Yoda translation app
- Webapp to translate into yoda language
+# Hodor translation app
+ Webapp to translate into Hodor language
