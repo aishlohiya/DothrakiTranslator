@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+:root {
+    --primary-color: #A3E635;
+    --background-color: #171717;
+    --button-background: white;
+}
+
+.yoda {
+    text-align: center;
+    padding: 3rem;
+}
+
+#txt-input {
+    width: 70%;
+    height: 18vh;
+    padding: 3rem;
+    margin: 0 auto;
+    border: 5px solid var(--primary-color);
+    border-radius: 4rem;
+    display: block;
+}
+
+#txt-button {
+    text-align: center;
+    width: auto;
+    height: 10vh;
+    margin: 3rem;
+    margin: 0 auto;
+    display: block;
+    border-radius: 1rem;
+    color: var(--primary-color);
+    background-color: var(--button-background);
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.signage{
+    text-align: center;
+    padding: 1rem;
+}
+
+#txt-output{
+    width: 70%;
+    height: 18vh;
+    padding: 3rem;
+    background-color: var(--button-background);
+    color: var(--background-color);
+    border-radius: 4rem;
+    border: 5px solid var(--primary-color);
+    margin: 0rem auto;
+    display: block;
+}
+
+.footer{
+    text-align: center;
+    font-size: medium;
+    padding: 1rem;
+    margin: 0 auto;
+    display: block;
+}
