@@ -1,9 +1,12 @@
-var yodaInputText = document.querySelector("#txt-input");
-yodaInputText.addEventListener("click", clickHandler);
+
+
+var dothrakiInputText = document.querySelector("#txt-input");
+dothrakiInputText.addEventListener("click", clickHandler);
 
 var yodaButton = document.querySelector("#txt-button");
 
-var yodaOutput = document.querySelector("#txt-output");
+var dothraki = document.querySelector("#txt-output");
+
 
 var serverURL = "https://api.funtranslations.com/translate/dothraki.json"
 
@@ -17,13 +20,13 @@ function errorHandler(error) {
 }
 
 function clickHandler(event) {
-    var inputText = yodaInputText.value;
+    var inputText = dothrakiInputText.value;
     var finalURL = constructURL(inputText)
     fetch(finalURL)
     .then(response => response.json())
     .then(json => {
         var outputText = json.contents.translated;
-        yodaOutput.innerText = outputText;
+        dothraki.innerText = outputText;
         
 })
 .catch(errorHandler);
