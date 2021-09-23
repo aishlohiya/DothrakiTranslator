@@ -1,2 +1,3 @@
-# Hodor translation app
- Webapp to translate into Hodor language
+Dothraki Translator 
+
+Translates to a language spoken by mother of dragons.
