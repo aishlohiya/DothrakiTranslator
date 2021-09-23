@@ -5,17 +5,15 @@ var yodaButton = document.querySelector("#txt-button");
 
 var yodaOutput = document.querySelector("#txt-output");
 
-var serverURL = "https://api.funtranslations.com/translate/hodor.json"
-
-// var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json"
+var serverURL = "https://api.funtranslations.com/translate/dothraki.json"
 
 function constructURL(input) {
     return serverURL + "?" + "text=" + input
 }
 
 function errorHandler(error) {
-    console.log("Error ocurred", error)
-    alert("Some server error. Please try again later")
+    console.log("Error ocurred", error);
+    alert("Some server error. Please try again later");
 }
 
 function clickHandler(event) {
@@ -26,6 +24,7 @@ function clickHandler(event) {
     .then(json => {
         var outputText = json.contents.translated;
         yodaOutput.innerText = outputText;
+        
 })
-    .catch(errorHandler)
+.catch(errorHandler);
 }
